@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="reserva.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalhoPrincipal">
+              <h1 id="nomeVisitante">Pousada <b>Secreta</b></h1>
+              <nav class="menu">
+                    <ul>
+                          <li><a href="#info">sobre</a></li>
+                          <li><a href="#rota">rota</a></li>
+                          <li><a href="#">quartos</a></li>
+                    </ul>
+              </nav>
+        </div>
+        <div class="descricaoTopo">
+            <img src="fotos/img-fundo.jpg" alt="imagem de praia">
+
+
+        </div>
+  </header>
+  <main>
+    <form id="reservar" action="#" method="post">
+        <fieldset class="dadosPessoais">
+            <legend>Dados pessoais</legend>
+            <div class="infoPessoal">
+                <label for="nome">Nome</label>
+                    <input id="nome" required type="text" name="nome" placeholder="Digite seu Nome">
+                
+
+                <label for="sobrenome">Sobrenome</label>
+                    <input id="sobrenome" required type="text" name="sobrenome" placeholder="Sobrenome">
+                
+            </div>
+
+            <div class="infoPessoal">
+                <label for="email">E-mail </label>
+                    <input id="email" required type="email" name="email" placeholder="Email">
+               
+
+                <label for="whatsapp">Whatsapp</label>
+                    <input id="whats" required type="tel" placeholder="(11) 00000-0000">
+                
+            </div>
+        </fieldset>
+
+        <fieldset class="quarto">        
+            <legend>Informações do quarto</legend> 
+            <div>           
+            <div class="tipoQuarto">
+                    <label>
+                        <input required type="radio" name="quarto" value="solteiro"> Solteiro
+                    </label>
+
+                    <label>
+                        <input required type="radio" name="quarto" value="casal"> Casal
+                    </label>
+
+                    <label>
+                        <input required type="radio" name="quarto" value="familia"> Família
+                    </label>
+                </div>
+
+                <div class="criancas">
+                    <label for="criancas">Criancas</label>
+                    <select name="criancas" id="criancas">
+                        <optgroup>
+                            <option value=" " disabled selected>Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label for="numcriancas">Quantidade de crianças</label>
+                    <input  id="numcriancas" type="number">                
+                </div>
+            </div>
+
+            <div class="dataHospedagem">
+                <label for="dataDeEntrada">Entrada
+                    <input required type="date">
+                </label>
+                <label for="dataDeSaida">Saída
+                    <input required type="date">
+                </label>
+            </div>
+        </fieldset>
+
+   
+
+        <fieldset class="atividades">
+            <legend>Informações adicionais</legend>
+            <div class="atividadesSlecao">
+                <h2>Atividades:</h2>
+                <label  for="atividades">
+                    <label for="atividadeCavalgar">
+                        <input id="atividadeCavalgar" type="checkbox"> Cavalgar
+                    </label>
+                    <label for="atividadePasseioDeBarco">
+                        <input id="atividadePasseioDeBarco" type="checkbox"> Passeio de barco
+                    </label>
+                    <label for="atividadeTrilha">
+                        <input id="atividadeTrilha" type="checkbox"> Trilha
+                    </label>
+                    <label for="atividadeAsa">
+                        <input id="atividadeAsa" type="checkbox"> Asa delta
+                    </label>
+                    <label for="atividadeEscalada">
+                        <input id="atividadeEscalada" type="checkbox"> Escalada
+                    </label>
+                    <label for="atividadeBug">
+                        <input id="atividadeBug" type="checkbox"> Passeio de Bug
+                    </label>
+                    <label for="atividadePesca">
+                        <input id="atividadePesca" type="checkbox"> Pesca
+                    </label>          
+                                        
+                </label>
+            </div>
+
+            <div class="mensagem">
+                <label for="msg"> Mensagem: 
+                    <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="digite sua mensagem aqui..."></textarea>
+                </label>
+            </div>
+        </fieldset>
+
+  
+    </form>
+  </main>
+</body>
+</html>

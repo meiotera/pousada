@@ -1,0 +1,154 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;      
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+:root {      
+    --fontCorCinza: rgb(82, 81, 81);/*cor de fonte de todo o site*/
+    --rodapeBackground: #49997c; 
+    --pousadaSecretaColorB: #9eb3cf;
+    --topoBackground: #fff;
+    --rodapeCor: white;     
+}
+
+/*topo*/
+.cabecalho .cabecalhoPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    color: var(--fontCorCinza);
+}
+.cabecalhoPrincipal b{
+    color: var(--pousadaSecretaColorB);
+}
+.menu ul li {
+    display: inline-block;
+    padding: 10px;
+}
+.menu ul a {
+    padding: 10px;
+    text-transform: uppercase;
+    color: var(--fontCorCinza);
+    font-weight: bold;
+}
+.descricaoTopo {
+    overflow: hidden;    
+    max-height: 20vh
+    
+}
+.descricaoTopo img{
+    max-width: 100%;         
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 60%;
+    padding: 20px;
+}
+.dadosPessoais {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;  
+     flex-wrap: wrap;
+
+}
+.infoPessoal label{
+    display: inline-block;    
+    width: 100px;
+    margin: 10px;
+}
+.infoPessoal input {
+    height: 20px;
+    padding: 0 5px;
+}
+fieldset {
+    border-radius: 10px;
+    padding: 15px;
+}
+input {
+    border: 2px solid rgb(110, 109, 109);
+    border-radius: 5px;
+}
+input:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+
+/*Quarto*/
+
+.quarto div {
+    padding: 10px;
+}
+
+.tipoQuarto label {
+    display: block;
+    margin: 10px;    
+}
+
+.criancas label {
+    margin: 10px;
+    display: inline-block;
+    width: 180px;    
+}
+.criancas input {
+    height: 20px;
+    padding: 0 5px;
+}
+#numcriancas {
+    width: 83px;
+}
+
+.dataHospedagem {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    
+}
+.dataHospedagem label {
+    margin-left: 15px;
+}
+.quarto {
+    display: flex;
+    justify-content: center;
+}
+
+/*Info Adicionais*/
+.atividades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+.atividadesSlecao label{
+    display: block;
+}
+.mensagem {
+    max-width: 280px;
+}
+textarea{
+    max-width: 250px;
+    max-height: 100px;
+    resize: none;
+    padding: 5px;
+    border: 2px solid rgb(110, 109, 109);
+    border-radius: 5px;
+}
+textarea:focus {
+    border: 2px solid green;
+    outline: none;
+}
